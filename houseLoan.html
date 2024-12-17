@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>房贷计算器</title>
+    <title>贷款计算器</title>
 </head>
 <body>
-    <h1>房贷计算器</h1>
-    <a>贷款金额</a>
-    <a>贷款期限</a>
-        <select name="period">
-            <option value="3">3期</option>
-            <option value="6">6期</option>
-            <option value="12">12期</option>
-            <option value="24">24期</option>
-        </select>
-    <a>贷款日期</a>
-    <a>还款方式</a>
+    <h1>贷款计算器</h1>
+    <div>
+        <a>贷款金额</a>
+        <input type="text" name="hello" value="请输入借款金额" id="funds" style="color: darkgrey">
+    </div>
+    <div>
+        <a>贷款期限</a>
+            <input type="radio" name="period" value="3"> 3期
+            <input type="radio" name="period" value="6"> 6期
+            <input type="radio" name="period" value="9"> 9期
+            <input type="radio" name="period" value="12"> 12期
+            <input type="radio" name="period" value="24"> 24期
+    </div>
+    <div>
+        <a>贷款日期</a>
+    </div>
+    <div>
+        <a>还款方式</a>
+            <select name="method1">
+                <option value="m1">等额本息</option>
+                <option value="m2">等额本金</option>
+                <option value="m3">先息后本</option>
+            </select>
+    </div>
+
 </body>
 </html>
